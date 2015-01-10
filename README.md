@@ -6,7 +6,7 @@ Xcode 3.2.6 is the last version of Xcode that supports building kernel extension
 Trying to build legacy kernel extension with Xcode 3.2.6 on OS X 10.10 will throw the following error:
 
     dyld: lazy symbol binding failed: Symbol not found: _map_fd
-      Referenced from: /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/ld_classic
+      Referenced from: /Developer/usr/bin/ld_classic
       Expected in: /usr/lib/libSystem.B.dylib
 
 The `ld_classic` tool included in Xcode 3.2.6 is based on the deprecated `map_fd` syscall, that is no longer available on OS X 10.10.
